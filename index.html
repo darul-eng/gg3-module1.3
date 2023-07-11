@@ -2,46 +2,51 @@
 <html>
 <head>
   <title>My Spotify Page</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<header>
-  <h1>My Spotify</h1>
-  <nav>
-    <ul>
-      <li><a href="#all-songs">All Songs</a></li>
-      <li><a href="#most-played">Most Played Songs</a></li>
-      <li><a href="#add-songs">Add Songs to Playlist</a></li>
-    </ul>
-  </nav>
-</header>
+  <header>
+    <div class="container">
+      <h1>My Spotify</h1>
+      <nav>
+        <ul>
+          <li><a href="#all-songs">All Songs</a></li>
+          <li><a href="#most-played">Most Played Songs</a></li>
+          <li><a href="#add-songs">Add Songs to Playlist</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container">
+    <section id="add-songs">
+      <h2>Add Songs to Playlist</h2>
+      <form id="add-song-form">
+        <input type="text" placeholder="Song name">
+        <input type="submit" value="Add">
+      </form>
+    </section>
 
-<section id="all-songs">
-  <h2>All Songs</h2>
-  <ul>
-    <li>Song 1</li>
-    <li>Song 2</li>
-    <li>Song 3</li>
-    <!-- Add more songs here -->
-  </ul>
-</section>
+    <div class="container-section">
+      <section id="all-songs">
+        <h2>All Songs</h2>
+        <ul>
+          <li>Song 1</li>
+          <li>Song 2</li>
+          <li>Song 3</li>
+          <!-- Add more songs here -->
+        </ul>
+      </section>
 
-<section id="most-played">
-  <h2>Most Played Songs</h2>
-  <ol>
-    <li>Song 1</li>
-    <li>Song 2</li>
-    <li>Song 3</li>
-    <!-- Add more songs here -->
-  </ol>
-</section>
-
-<section id="add-songs">
-  <h2>Add Songs to Playlist</h2>
-  <form>
-    <input type="text" placeholder="Song name">
-    <input type="submit" value="Add">
-  </form>
-</section>
-
+      <section id="most-played">
+        <h2>Most Played Songs</h2>
+        <ol id="most-played-list">
+          <li>Song 1</li>
+          <li>Song 2</li>
+          <li>Song 3</li>
+          <!-- Add more songs here -->
+        </ol>
+      </section>
+    </div>
+  </div>
 </body>
 </html>
